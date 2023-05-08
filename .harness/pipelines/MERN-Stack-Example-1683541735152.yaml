@@ -3,18 +3,12 @@ pipeline:
   name: Build MERN-Stack-Example
   orgIdentifier: default
   projectIdentifier: The_Very_First_project
-  properties:
-    ci:
-      codebase:
-        build: <+input>
-        connectorRef: account.Github
-        repoName: srdjan-harness/MERN-Stack-Example
   stages:
     - stage:
         identifier: build
         name: build
         spec:
-          cloneCodebase: true
+          cloneCodebase: false
           execution:
             steps:
               - step:
