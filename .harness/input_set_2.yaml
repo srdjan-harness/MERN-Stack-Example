@@ -1,0 +1,22 @@
+inputSet:
+  pipeline:
+    identifier: Build_MERN_Stack_Example_1683541798525
+    properties:
+      ci:
+        codebase:
+          build:
+            spec:
+              branch: main
+            type: branch
+    stages:
+      - stage:
+          identifier: build
+          type: CI
+          variables:
+            - name: Test_Run_Var_1
+              type: String
+              value: asdfg
+  name: input set 2
+  identifier: input_set_2
+  orgIdentifier: default
+  projectIdentifier: The_Very_First_project
