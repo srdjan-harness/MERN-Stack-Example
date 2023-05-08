@@ -25,9 +25,18 @@ pipeline:
                   timeout: ""
                   type: Run
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
+        variables:
+          - name: Test_Fix_Var_1
+            type: String
+            description: Desc for Test_Fix_Var_1:qwerty
+            value: qwerty
+          - name: Test_Run_Var_1
+            type: String
+            description: Descfription for Test_Run_Var_1:asdfg
+            value: <+input>.allowedValues(asdfg,hjkl)
